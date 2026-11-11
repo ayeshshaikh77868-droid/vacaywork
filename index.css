@@ -1,0 +1,52 @@
+/* Premium CSS Theme Variables */
+:root {
+  --primary: #2563eb;           /* Modern Premium Blue */
+  --primary-hover: #1d4ed8;     /* Darker hover state Blue */
+  --accent: #f59e0b;            /* Amber accent */
+  --dark-bg: #0f172a;           /* Deep Midnight Navy */
+  --light-bg: #f8fafc;          /* Elegant off-white background */
+  --card-bg: #ffffff;           /* Container white */
+  --text-main: #1e293b;         /* Standard dark text */
+  --text-muted: #64748b;        /* Soft slate-grey text */
+  --border-color: rgba(15, 23, 42, 0.08);
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 10px 30px -10px rgba(0, 0, 0, 0.08);
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 30px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--light-bg);
+  color: var(--text-main);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { text-decoration: none; }
+button, input, textarea, select, a { -webkit-tap-highlight-color: transparent; }
+button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible, a:focus-visible { outline: 3px solid rgba(37, 99, 235, .45); outline-offset: 3px; }
+
+/* Custom modern scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--light-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: var(--radius-sm);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
